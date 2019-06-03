@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ramadan 101 | Running towards Him</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Oleo+Script|Questrial&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #Home {
+            background-image: url(img/night1.png);
+            height: 100vh;
+
+        }
+
+        #logo {
+            padding-left: 20px;
+        }
+
+        #navbar {
+            font-family: 'Questrial', sans-serif;
+        }
+
+        #intro {
+            padding-top: 100px;
+        }
+
+        #title {
+            font-family: 'Lobster', cursive;
+        }
+
+        #p {
+            font-family: 'Questrial', sans-serif;
+        }
+
+        #buttons {
+            padding-top: 20px;
+        }
+
+        #khatam-calculator,
+        #prayers, #mosque-hop {
+            height: 100vh;
+        }
+
+        #cards {
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav id="navbar">
+            <div class="nav-wrapper deep-purple lighten-4">
+                <a class="brand-logo" id="logo">Ramadan 101</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#khatam-calculator">Khatam Calculator</a></li>
+                    <li><a href="#prayers">Prayers</a></li>
+                    <li><a href="collapsible.html">Mosque-hop</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="Home">
+        <div id="intro" class="container text-center">
+            <h1 id="title">Ramadan 101</h1>
+            <h5 id="p"><em>This month of Ramadan, work your way to attain His blessings.</em></h5>
+            <h5 id="p"><em>Our tools:</em></h5>
+            <div id="buttons">
+                <a href="#khatam-calculator" class="waves-effect waves-light btn-large purple lighten-4">Khatam
+                    Calculator</a>
+                <a class="waves-effect waves-light btn-large purple lighten-4" href="#prayers">Prayers</a>
+                <a class="waves-effect waves-light btn-large purple lighten-4">Mosque-hop</a>
+            </div>
+
+        </div>
+    </div>
+    <div id="khatam-calculator" class="container text-center">
+        <div id="intro">
+            <h1 id="title">Khatam Calculator</h1>
+            <h5 id="p"><em>This app is developed to help Muslims organise their time spent reading the Quran by
+                    calculating the number of pages or days needed to khatam, based on their own reading pace.</em>
+            </h5>
+            <div id="buttons">
+                <a class="waves-effect waves-light btn-large purple lighten-4"
+                    href="https://izzah1909.github.io/Khatam-Calculator/" target="_blank">Go to Khatam Calculator</a>
+            </div>
+        </div>
+    </div>
+    <div id="prayers" class="container text-center">
+        <div id="intro">
+            <h1 id="title">Pray hard this Ramadhan</h1>
+            <h5 id="p">Here is a tool which gives information about the sunnah prayers that are usually performed this
+                Ramadhan.
+                Click on the buttons with the prayer names below to know more!
+            </h5>
+            <div id="buttons">
+                <a class="waves-effect waves-light btn-large purple lighten-4" onclick="showTaraweeh()">Solat
+                    Taraweeh</a>
+                <a class="waves-effect waves-light btn-large purple lighten-4" onclick="showWitr()">Solat Witr</a>
+            </div>
+
+        </div>
+        <div class="row" id="cards">
+            <div class="col s12 m5">
+                <div class="card-panel deep-purple darken-4">
+                    <span class="white-text" id="card1">Click on a prayer button to know more!
+                    </span>
+                </div>
+            </div>
+            <div class="col s12 m5">
+                <div class="card-panel deep-purple darken-4">
+                    <span class="white-text" id="card2">Click on a prayer button to know more!
+                    </span>
+                </div>
+            </div>
+            <div class="col s12 m5">
+                <div class="card-panel deep-purple darken-4">
+                    <span class="white-text" id="card3">Click on a prayer button to know more!
+                    </span>
+                </div>
+            </div>
+            <div class="col s12 m5">
+                <div class="card-panel deep-purple darken-4">
+                    <span class="white-text" id="card4">Click on a prayer button to know more!
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mosque-hop" class="container text-center">
+        <div id="intro">
+            </div>
+            <h1 id="title">Mosque-hop</h1>
+            <h5 id="p">Searching for the best mosque to perform taraweeh this year? How about going mosque-hopping around
+                Singapore!
+            </h5>
+            <div id="buttons">
+                <a class="waves-effect waves-light btn-large purple lighten-4" onclick="printNorth()">North</a>
+                <a class="waves-effect waves-light btn-large purple lighten-4" onclick="printSouth()">South</a>
+                <a class="waves-effect waves-light btn-large purple lighten-4" onclick="printEast()">East</a>
+                <a class="waves-effect waves-light btn-large purple lighten-4" onclick="printWest()">West</a>
+            </div>
+        </div>
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
