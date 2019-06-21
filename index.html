@@ -31,6 +31,10 @@
             padding-top: 100px;
         }
 
+        #intro1 {
+            padding-top: 150px;
+        }
+
         #title {
             font-family: 'Lobster', cursive;
         }
@@ -40,16 +44,23 @@
         }
 
         #buttons {
-            padding-top: 20px;
+            padding-bottom: 20px;
         }
 
         #khatam-calculator,
-        #prayers, #mosque-hop {
+        #prayers,
+        #mosque-hop {
             height: 100vh;
         }
 
         #cards {
             padding-top: 20px;
+        }
+
+        #mosque {
+            padding-bottom: 20px;
+            padding-left: 20px;
+
         }
     </style>
 </head>
@@ -62,7 +73,7 @@
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="#khatam-calculator">Khatam Calculator</a></li>
                     <li><a href="#prayers">Prayers</a></li>
-                    <li><a href="collapsible.html">Mosque-hop</a></li>
+                    <li><a href="#mosque-hop">Mosque-hop</a></li>
                 </ul>
             </div>
         </nav>
@@ -76,7 +87,7 @@
                 <a href="#khatam-calculator" class="waves-effect waves-light btn-large purple lighten-4">Khatam
                     Calculator</a>
                 <a class="waves-effect waves-light btn-large purple lighten-4" href="#prayers">Prayers</a>
-                <a class="waves-effect waves-light btn-large purple lighten-4">Mosque-hop</a>
+                <a class="waves-effect waves-light btn-large purple lighten-4" href="#mosque-hop">Mosque-hop</a>
             </div>
 
         </div>
@@ -134,22 +145,104 @@
             </div>
         </div>
     </div>
-    <div id="mosque-hop" class="container text-center">
-        <div id="intro">
-            </div>
+    <div id="mosque-hop">
+        <div id="intro1" class="container text-center"> 
             <h1 id="title">Mosque-hop</h1>
             <h5 id="p">Searching for the best mosque to perform taraweeh this year? How about going mosque-hopping around
                 Singapore!
             </h5>
-            <div id="buttons">
-                <a class="waves-effect waves-light btn-large purple lighten-4" onclick="printNorth()">North</a>
-                <a class="waves-effect waves-light btn-large purple lighten-4" onclick="printSouth()">South</a>
-                <a class="waves-effect waves-light btn-large purple lighten-4" onclick="printEast()">East</a>
-                <a class="waves-effect waves-light btn-large purple lighten-4" onclick="printWest()">West</a>
+            <div class="row" >
+                <div class="col s12 m5">
+                    <div class="card-panel deep-purple darken-4">
+                        <span class="white-text" id="card5">Click on a mosque of your choice to know where it is located!
+                        </span>
+                    </div>
+                </div>
             </div>
-        </div>
-        
+        </div> 
     </div>
+    <div id="mosques" class="col text-center">
+        <div class="btn-group-vertical" role="group" aria-label="Basic example" id="mosque">
+            <a class="waves-effect waves-light btn-large purple lighten-4" id="buttons">North</a>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()" href="#mosque-hop">Abdul Hamid Kg Pasiran</button>
+            <button type="button" class="btn btn-secondary" onclick="printIbrahim()">Ahmad Ibrahim</button>
+            <button type="button" class="btn btn-secondary" onclick="printIstiqamah()">Al-Istiqamah</button>
+            <button type="button" class="btn btn-secondary"onclick="printAlkaff()">Alkaff Upp Serangoon</button>
+            <button type="button" class="btn btn-secondary" onclick="printMuttaqin()">Al-Muttaqin</button>
+            <button type="button" class="btn btn-secondary" onclick="printNahdhah()">An-Nahdhah</button>
+            <button type="button" class="btn btn-secondary" onclick="printNur()">An-Nur</button>
+            <button type="button" class="btn btn-secondary" onclick="printAssyafaah()">Assyafaah</button>
+            <button type="button" class="btn btn-secondary" onclick="printMakmur()">Darul Makmur</button>
+            <button type="button" class="btn btn-secondary" onclick="printYusoff()">Haji Yusoff</button>
+            <button type="button" class="btn btn-secondary" onclick="printRahimabi()">Hajjah Rahimabi</button>
+            <button type="button" class="btn btn-secondary" onclick="printMuhajirin()">Muhajirin</button>
+            <button type="button" class="btn btn-secondary" onclick="printSalmah()">Omar Salmah</button>
+            <button type="button" class="btn btn-secondary" onclick="printSembawang()">Petempatan Melayu Sembawang</button>
+            <button type="button" class="btn btn-secondary" onclick="printIshak()" >Masjid Yusof Ishak</button>
+        </div>
+        <div class="btn-group-vertical" role="group" aria-label="Basic example" id="mosque">
+            <a class="waves-effect waves-light btn-large purple lighten-4" id="buttons">South</a>
+            <button type="button" class="btn btn-secondary" onclick="printGafoor()">Abdul Gafoor</button>
+            <button type="button" class="btn btn-secondary" onclick="printAbrar()">Al-Abrar</button>
+            <button type="button" class="btn btn-secondary" onclick="printFalah()">Al-Falah</button>
+            <button type="button" class="btn btn-secondary" onclick="printAnggulia()">Anggulia</button>
+            <button type="button" class="btn btn-secondary" onclick="printBaalwie()">Ba'Alwie</button>
+            <button type="button" class="btn btn-secondary" onclick="printBencoolen()">Bencoolen</button>
+            <button type="button" class="btn btn-secondary" onclick="printaBurhani()">Burhani</button>
+            <button type="button" class="btn btn-secondary" onclick="printSalleh()">Haji Muhd Salleh (Palmer Road)</button>
+            <button type="button" class="btn btn-secondary" onclick="printFatimah()">Hajjah Fatimah</button>
+            <button type="button" class="btn btn-secondary" onclick="printJamae()">Jamae Chulia</button>
+            <button type="button" class="btn btn-secondary" onclick="printQueenstown()">Jamek Queenstown</button>
+            <button type="button" class="btn btn-secondary" onclick="printJamiyah()">Jamiyah Ar- Rabitah</button>
+            <button type="button" class="btn btn-secondary" onclick="printDelta()">Kampong Delta</button>
+            <button type="button" class="btn btn-secondary" onclick="printMalabar()">Malabar</button>
+            <button type="button" class="btn btn-secondary" onclick="printMoulana()">Moulana Mohd Ali</button>
+            <button type="button" class="btn btn-secondary" onclick="printMujahidin()">Mujahidin</button>
+            <button type="button" class="btn btn-secondary" onclick="printMelaka()">Omar Kampung Melaka</button>
+            <button type="button" class="btn btn-secondary" onclick="printSultan()">Sultan</button>
+            <button type="button" class="btn btn-secondary" onclick="printTasek()">Tasek Utara</button>
+        </div>
+        <div class="btn-group-vertical" role="group" aria-label="Basic example" id="mosque">
+            <a class="waves-effect waves-light btn-large purple lighten-4" id="buttons">East</a>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Abdul Aleem Siddique</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Al-Abdul Razak</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Al-Ansar</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Masjid Al-Islah</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Al-Istighfar</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Al-Mawaddah</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Alkaff Kampung Melayu</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Al-Taqua</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Darul Aman</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Darul Ghufran</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Haji Mohd Salleh</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Kampung Siglap</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Kassim</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Khadijah</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Khalid</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Mydin</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Salim Mattar</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Wak Tanjong</button>
+        </div>
+        <div class="btn-group-vertical" role="group" aria-label="Basic example" id="mosque">
+            <a class="waves-effect waves-light btn-large purple lighten-4" id="buttons">West</a>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Ahmad</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Al-Firdaus</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Al-Iman</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Al-Huda</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Al-Khair</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Al-Mukminin</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Ar-Raudhah</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Assyakirin</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Darussalam</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Hang Jebat</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Hasanah</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Hussain Sulaiman</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Maarof</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Pulau Bukom</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Pusara Aman</button>
+            <button type="button" class="btn btn-secondary" onclick="printHamid()">Tentera Di Raja</button>
+        </div>
+    
     <script src="main.js"></script>
 </body>
 

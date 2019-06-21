@@ -15,5 +15,70 @@ function showWitr() {
     document.getElementById("card2").innerHTML = how;
     let howLong= "How long: The minimum number of rakaats for Witr is one rakaah. But Witr may also be three or five or seven or nine or eleven.  ";
     document.getElementById("card3").innerHTML = howLong;
+    let message= "Click on a prayer button to know more!";
+    document.getElementById("card4").innerHTML=message;
+    
+    
 
+}
+function printHamid() {
+    let hamid = "10 Gentle Rd, Singapore 309194";
+    document.getElementById("card5").innerHTML = hamid;
+    
+}
+function printIbrahim() {
+    let ibrahim = "15 Jln Ulu Seletar, Singapore 769227";
+    document.getElementById("card5").innerHTML = ibrahim;
+}
+function printIstiqamah() {
+    let istiqamah= "2 Serangoon North Ave 2, Singapore 555876";
+    document.getElementById("card5").innerHTML = istiqamah;
+}
+function printAlkaff() {
+    let alkaff= "66 Pheng Geck Ave, Singapore 348261";
+    document.getElementById("card5").innerHTML=alkaff;
+}
+function printMuttaqin() {
+    let muttaqin= "5140 Ang Mo Kio Ave 6, Singapore 569844";
+    document.getElementById("card5").innerHTML=muttaqin;
+}
+function printNahdhah() {
+    let nahdhah="9A Bishan Street 14, Singapore 579786";
+    document.getElementById("card5").innerHTML=nahdhah;
+}
+function printNur() {
+    let nur= "6 Admiralty Rd, Singapore 739983";
+    document.getElementById("card5").innerHTML=nur;
+}
+function printAssyafaah() {
+    let assyafaah= "1 Admiralty Ln, Assyafaah Mosque, Singapore 757620";
+    document.getElementById("card5").innerHTML= assyafaah;
+}
+function printMakmur() {
+    let makmur= "950 Yishun Ave 2, Singapore 769099";
+    document.getElementById("card5").innerHTML=makmur;
+}
+function printYusoff() {
+    let yusoff= "2 Hillside Dr, Singapore 548920";
+    document.getElementById("card5").innerHTML= yusoff;
+}
+function printRahimabi() {
+    let rahimabi= "76 Kim Keat Road,Singapore 328835";
+    document.getElementById("card5").innerHTML= rahimabi;
+}
+function printMuhajirin() {
+    let muhajirin= "275 Braddell Rd, Singapore 579704";
+    document.getElementById("card5").innerHTML=muhajirin;
+}
+function printSalmah() {
+    let salmah= "411 Jln Mashhor, Singapore 299173";
+    document.getElementById("card5").innerHTML= salmah;
+}
+function printSembawang() {
+    let sembawang= "27B Jln Mempurong, Singapore 759055";
+    document.getElementById("card5").innerHTML= sembawang;
+}
+function printIshak() {
+    let ishak= "10 Woodlands Drive 17, Singapore 737740";
+    document.getElementById("card5").innerHTML= ishak;
 }
