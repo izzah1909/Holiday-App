@@ -17,10 +17,9 @@ function showWitr() {
     document.getElementById("card3").innerHTML = howLong;
     let message= "Click on a prayer button to know more!";
     document.getElementById("card4").innerHTML=message;
-    
-    
-
 }
+
+
 function printHamid() {
     let hamid = "10 Gentle Rd, Singapore 309194";
     document.getElementById("card5").innerHTML = hamid;
@@ -81,4 +80,244 @@ function printSembawang() {
 function printIshak() {
     let ishak= "10 Woodlands Drive 17, Singapore 737740";
     document.getElementById("card5").innerHTML= ishak;
+}
+
+
+
+
+function printGafoor() {
+    let gafoor = "41 Dunlop St, Singapore 209369";
+    document.getElementById("card5").innerHTML = gafoor;
+    
+}
+function printAbrar()
+    let abrar = "192 Telok Ayer St, Singapore 068635";
+    document.getElementById("card5").innerHTML = abrar;
+}
+function printFalah() {
+    let falah= "22 Bideford Rd, Singapore 229923";
+    document.getElementById("card5").innerHTML = falah;
+}
+function printAnggulia() {
+    let anggulia= "265 Serangoon Rd, Singapore 218099";
+    document.getElementById("card5").innerHTML=anggulia;
+}
+function printBaalwie() {
+    let baalwie= "2 Lewis Rd, Singapore 258590";
+    document.getElementById("card5").innerHTML=baalwie;
+}
+function printNahdhah() {
+    let nahdhah="9A Bishan Street 14, Singapore 579786";
+    document.getElementById("card5").innerHTML=nahdhah;
+}
+function printBencoolen() {
+    let bencoolen= "51 Bencoolen St, Singapore 189630";
+    document.getElementById("card5").innerHTML=bencoolen;
+}
+function printBurhani() {
+    let burhani= "39 Hill St, Singapore 179364";
+    document.getElementById("card5").innerHTML= burhani;
+}
+
+function printSalleh() {
+    let salleh= "37 Palmer Rd, Singapore 079424";
+    document.getElementById("card5").innerHTML= salleh;
+}
+function printFatimah() {
+    let fatimah= "4001 Beach Rd, Singapore 199584";
+    document.getElementById("card5").innerHTML= fatimah;
+}
+function printJamae() {
+    let jamae= "218 South Bridge Rd, Singapore 058767";
+    document.getElementById("card5").innerHTML=jamae;
+}
+function printQueenstown() {
+    let queenstown= "801 Margaret Dr, Singapore 149307";
+    document.getElementById("card5").innerHTML= queenstown;
+}
+function printJamiyah() {
+    let jamiyah= "601 Tiong Bahru Rd, Singapore 158787";
+    document.getElementById("card5").innerHTML= jamiyah;
+}
+function printDelta() {
+    let delta= "10 Delta Ave, Singapore 169831";
+    document.getElementById("card5").innerHTML= delta;
+}
+function printMalabar() {
+    let malabar = "471 Victoria St, Singapore 198370";
+    document.getElementById("card5").innerHTML = malabar;
+    
+}
+function printMoulana() {
+    let moulana = "80 Raffles Place, #B1-01 I UOB Plaza, Singapore 048624";
+    document.getElementById("card5").innerHTML = moulana;
+}
+function printMujahidin() {
+    let mujahidin= "590 Stirling Rd, Singapore 148952";
+    document.getElementById("card5").innerHTML = mujahidin;
+}
+function printMelaka() {
+    let melaka= "10 Keng Cheow St, Singapore 059607";
+    document.getElementById("card5").innerHTML=melaka;
+}
+function printSultan() {
+    let sultan= "3 Muscat St, Singapore 198833";
+    document.getElementById("card5").innerHTML=sultan;
+}
+function printTasek() {
+    let tasek="46 Bristol Rd, Singapore 219852";
+    document.getElementById("card5").innerHTML=tasek;
+}
+
+
+
+
+function printAleem() {
+    let aleem = "No. 90 Lorong K, Telok Kurau Road, 425723";
+    document.getElementById("card5").innerHTML = aleem;
+    
+}
+function printRazak()
+    let razak = "30 Jln Ismail, Singapore 419285";
+    document.getElementById("card5").innerHTML = razak;
+}
+function printAnsar() {
+    let ansar= "155 Bedok North Ave 1, Singapore 469751";
+    document.getElementById("card5").innerHTML = ansar;
+}
+function printIslah() {
+    let islah= "30 Punggol Field, Singapore 828812";
+    document.getElementById("card5").innerHTML=islah;
+}
+function printIstighfar() {
+    let istighfar= "2 Pasir Ris Walk, Singapore 518239";
+    document.getElementById("card5").innerHTML=istighfar;
+}
+function printMawaddah() {
+    let mawaddah="151 Compassvale Bow, Singapore 544997";
+    document.getElementById("card5").innerHTML=mawaddah;
+}
+function printMelayu() {
+    let melayu= " 200 Bedok Reservoir Rd, Singapore 479221";
+    document.getElementById("card5").innerHTML=melayu;
+}
+function printTaqua() {
+    let taqua= "11A Jln Bilal, Singapore 468862";
+    document.getElementById("card5").innerHTML= taqua;
+}
+
+function printAman() {
+    let aman= "1 Jln Eunos, Singapore 419493";
+    document.getElementById("card5").innerHTML= aman;
+}
+function printGhufran() {
+    let ghufran= "503 Tampines Ave 5, Singapore 529651";
+    document.getElementById("card5").innerHTML= ghufran;
+}
+function printMohd() {
+    let mohd= "245 Geylang Rd, Singapore 389304";
+    document.getElementById("card5").innerHTML=mohd;
+}
+function printSiglap() {
+    let siglap= "451 Marine Parade Rd, Singapore 449283";
+    document.getElementById("card5").innerHTML= siglap;
+}
+function printKassim() {
+    let kassim= "450 Changi Rd, Singapore 419877";
+    document.getElementById("card5").innerHTML= kassim;
+}
+function printKhadijah() {
+    let khadijah= "583 Geylang Rd, Singapore 389522";
+    document.getElementById("card5").innerHTML= khadijah;
+}
+function printKhalid() {
+    let khalid = "130 Joo Chiat Rd, Singapore 427727";
+    document.getElementById("card5").innerHTML = khalid;
+    
+}
+function printMydin() {
+    let mydin = " 67 Jln Lapang, Singapore 419007";
+    document.getElementById("card5").innerHTML = mydin;
+}
+function printMujahidin() {
+    let mujahidin= "590 Stirling Rd, Singapore 148952";
+    document.getElementById("card5").innerHTML = mujahidin;
+}
+function printMattar() {
+    let mattar= "1 Mattar Rd, Singapore 387713";
+    document.getElementById("card5").innerHTML=mattar;
+}
+function printWktg() {
+    let wktg= "25 Paya Lebar Rd, Singapore 409004";
+    document.getElementById("card5").innerHTML=wktg;
+}
+
+
+
+function printAhmad() {
+    let ahmad = "2 Lor Sarhad, Singapore 119173";
+    document.getElementById("card5").innerHTML = ahmad;
+    
+}
+function printFirdaus()
+    let firdaus = "11 Jalan Ibadat, Singapore 698955";
+    document.getElementById("card5").innerHTML = firdaus;
+}
+function printIman() {
+    let iman= "10 Bukit Panjang Ring Rd, Singapore 679943";
+    document.getElementById("card5").innerHTML = iman;
+}
+function printHuda() {
+    let huda= "34 Jln Haji Alias, Singapore 268534";
+    document.getElementById("card5").innerHTML=huda;
+}
+function printKhair() {
+    let khair= "1 Teck Whye Cres, Singapore 688847";
+    document.getElementById("card5").innerHTML=khair;
+}
+function printMukminin() {
+    let mukminin="271 Jurong East Street 21, Singapore 609603";
+    document.getElementById("card5").innerHTML=mukminin;
+}
+function printRaudhah() {
+    let raudhah= "30 Bukit Batok East Ave 2, Singapore 659919";
+    document.getElementById("card5").innerHTML=raudhah;
+}
+function printAssyakirin() {
+    let assyakirin= "550 Yung An Rd, Singapore 618617";
+    document.getElementById("card5").innerHTML= assyakirin;
+}
+
+function printDarussalam() {
+    let darussalam= "3002 Commonwealth Ave W, Singapore 129579";
+    document.getElementById("card5").innerHTML= darussalam;
+}
+function printJebat() {
+    let jebat= "100 Jln Hang Jebat, Singapore 139520";
+    document.getElementById("card5").innerHTML= jebat;
+}
+function printHasanah() {
+    let hasanah= "492 Teban Gardens Rd, Singapore 608878";
+    document.getElementById("card5").innerHTML=hasanah;
+}
+function printHussain() {
+    let hussain= "394 Pasir Panjang Rd, Singapore 118730";
+    document.getElementById("card5").innerHTML= hussain;
+}
+function printMaarof() {
+    let maarof= "20 Jurong West Street 26, Singapore 648125";
+    document.getElementById("card5").innerHTML= maarof;
+}
+function printBukom() {
+    let bukom= "Pulau Bukom P O Box 1908";
+    document.getElementById("card5").innerHTML= bukom;
+}
+function printPusara() {
+    let pusara = "11 Lim Chu Kang Rd, Singapore 719452";
+    document.getElementById("card5").innerHTML = pusara;
+    
+}
+function printTentera() {
+    let tentera = "81 Clementi Rd, Singapore 129797";
+    document.getElementById("card5").innerHTML = tentera;
 }
