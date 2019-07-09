@@ -20,6 +20,7 @@ function showWitr() {
 }
 
 
+
 function printHamid() {
     let hamid = "10 Gentle Rd, Singapore 309194";
     document.getElementById("card5").innerHTML = hamid;
@@ -90,7 +91,7 @@ function printGafoor() {
     document.getElementById("card5").innerHTML = gafoor;
     
 }
-function printAbrar()
+function printAbrar() {
     let abrar = "192 Telok Ayer St, Singapore 068635";
     document.getElementById("card5").innerHTML = abrar;
 }
@@ -177,7 +178,7 @@ function printAleem() {
     document.getElementById("card5").innerHTML = aleem;
     
 }
-function printRazak()
+function printRazak() {
     let razak = "30 Jln Ismail, Singapore 419285";
     document.getElementById("card5").innerHTML = razak;
 }
@@ -259,10 +260,11 @@ function printAhmad() {
     document.getElementById("card5").innerHTML = ahmad;
     
 }
-function printFirdaus()
+function printFirdaus() {
     let firdaus = "11 Jalan Ibadat, Singapore 698955";
     document.getElementById("card5").innerHTML = firdaus;
 }
+
 function printIman() {
     let iman= "10 Bukit Panjang Ring Rd, Singapore 679943";
     document.getElementById("card5").innerHTML = iman;
