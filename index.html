@@ -49,7 +49,8 @@
 
         #khatam-calculator,
         #prayers,
-        #mosque-hop {
+        #mosque-hop,
+        #hadeeth {
             height: 100vh;
         }
 
@@ -163,92 +164,102 @@
             <a class="waves-effect waves-light btn-large purple lighten-4" href="#mosques">Find Mosques</a>
         </div>
     </div>
-    <div id="mosques" class="col text-center">
-        <div class="btn-group-vertical" role="group" aria-label="Basic example" id="mosque">
-            <a class="waves-effect waves-light btn-large purple lighten-4" id="buttons">North</a>
-            <button type="button" class="btn btn-secondary" onclick="printHamid()">Abdul Hamid Kg Pasiran</button>
-            <button type="button" class="btn btn-secondary" onclick="printIbrahim()">Ahmad Ibrahim</button>
-            <button type="button" class="btn btn-secondary" onclick="printIstiqamah()">Al-Istiqamah</button>
-            <button type="button" class="btn btn-secondary" onclick="printAlkaff()">Alkaff Upp Serangoon</button>
-            <button type="button" class="btn btn-secondary" onclick="printMuttaqin()">Al-Muttaqin</button>
-            <button type="button" class="btn btn-secondary" onclick="printNahdhah()">An-Nahdhah</button>
-            <button type="button" class="btn btn-secondary" onclick="printNur()">An-Nur</button>
-            <button type="button" class="btn btn-secondary" onclick="printAssyafaah()">Assyafaah</button>
-            <button type="button" class="btn btn-secondary" onclick="printMakmur()">Darul Makmur</button>
-            <button type="button" class="btn btn-secondary" onclick="printYusoff()">Haji Yusoff</button>
-            <button type="button" class="btn btn-secondary" onclick="printRahimabi()">Hajjah Rahimabi</button>
-            <button type="button" class="btn btn-secondary" onclick="printMuhajirin()">Muhajirin</button>
-            <button type="button" class="btn btn-secondary" onclick="printSalmah()">Omar Salmah</button>
-            <button type="button" class="btn btn-secondary" onclick="printSembawang()">Petempatan Melayu
-                Sembawang</button>
-            <button type="button" class="btn btn-secondary" onclick="printIshak()">Masjid Yusof Ishak</button>
-        </div>
-        <div class="btn-group-vertical" role="group" aria-label="Basic example" id="mosque">
-            <a class="waves-effect waves-light btn-large purple lighten-4" id="buttons">South</a>
-            <button type="button" class="btn btn-secondary" onclick="printGafoor()">Abdul Gafoor</button>
-            <button type="button" class="btn btn-secondary" onclick="printAbrar()">Al-Abrar</button>
-            <button type="button" class="btn btn-secondary" onclick="printFalah()">Al-Falah</button>
-            <button type="button" class="btn btn-secondary" onclick="printAnggulia()">Anggulia</button>
-            <button type="button" class="btn btn-secondary" onclick="printBaalwie()">Ba'Alwie</button>
-            <button type="button" class="btn btn-secondary" onclick="printBencoolen()">Bencoolen</button>
-            <button type="button" class="btn btn-secondary" onclick="printaBurhani()">Burhani</button>
-            <button type="button" class="btn btn-secondary" onclick="printSalleh()">Haji Muhd Salleh (Palmer
-                Road)</button>
-            <button type="button" class="btn btn-secondary" onclick="printFatimah()">Hajjah Fatimah</button>
-            <button type="button" class="btn btn-secondary" onclick="printJamae()">Jamae Chulia</button>
-            <button type="button" class="btn btn-secondary" onclick="printQueenstown()">Jamek Queenstown</button>
-            <button type="button" class="btn btn-secondary" onclick="printJamiyah()">Jamiyah Ar- Rabitah</button>
-            <button type="button" class="btn btn-secondary" onclick="printDelta()">Kampong Delta</button>
-            <button type="button" class="btn btn-secondary" onclick="printMalabar()">Malabar</button>
-            <button type="button" class="btn btn-secondary" onclick="printMoulana()">Moulana Mohd Ali</button>
-            <button type="button" class="btn btn-secondary" onclick="printMujahidin()">Mujahidin</button>
-            <button type="button" class="btn btn-secondary" onclick="printMelaka()">Omar Kampung Melaka</button>
-            <button type="button" class="btn btn-secondary" onclick="printSultan()">Sultan</button>
-            <button type="button" class="btn btn-secondary" onclick="printTasek()">Tasek Utara</button>
-        </div>
-        <div class="btn-group-vertical" role="group" aria-label="Basic example" id="mosque">
-            <a class="waves-effect waves-light btn-large purple lighten-4" id="buttons">East</a>
-            <button type="button" class="btn btn-secondary" onclick="printAleem()">Abdul Aleem Siddique</button>
-            <button type="button" class="btn btn-secondary" onclick="printRazak()">Al-Abdul Razak</button>
-            <button type="button" class="btn btn-secondary" onclick="printAnsar()">Al-Ansar</button>
-            <button type="button" class="btn btn-secondary" onclick="printIslah()">Masjid Al-Islah</button>
-            <button type="button" class="btn btn-secondary" onclick="printIstighfar()">Al-Istighfar</button>
-            <button type="button" class="btn btn-secondary" onclick="printMawaddah()">Al-Mawaddah</button>
-            <button type="button" class="btn btn-secondary" onclick="printMelayu()">Alkaff Kampung Melayu</button>
-            <button type="button" class="btn btn-secondary" onclick="printTaqua()">Al-Taqua</button>
-            <button type="button" class="btn btn-secondary" onclick="printAman()">Darul Aman</button>
-            <button type="button" class="btn btn-secondary" onclick="printGhufran()">Darul Ghufran</button>
-            <button type="button" class="btn btn-secondary" onclick="printMohd()">Haji Mohd Salleh</button>
-            <button type="button" class="btn btn-secondary" onclick="printSiglap()">Kampung Siglap</button>
-            <button type="button" class="btn btn-secondary" onclick="printKassim()">Kassim</button>
-            <button type="button" class="btn btn-secondary" onclick="printKhadijah()">Khadijah</button>
-            <button type="button" class="btn btn-secondary" onclick="printKhalid()">Khalid</button>
-            <button type="button" class="btn btn-secondary" onclick="printMydin()">Mydin</button>
-            <button type="button" class="btn btn-secondary" onclick="printMattar()">Salim Mattar</button>
-            <button type="button" class="btn btn-secondary" onclick="printWktg()">Wak Tanjong</button>
-        </div>
-        <div class="btn-group-vertical" role="group" aria-label="Basic example" id="mosque">
-            <a class="waves-effect waves-light btn-large purple lighten-4" id="buttons">West</a>
-            <button type="button" class="btn btn-secondary" onclick="printAhmad()">Ahmad</button>
-            <button type="button" class="btn btn-secondary" onclick="printFirdaus()">Al-Firdaus</button>
-            <button type="button" class="btn btn-secondary" onclick="printIman()">Al-Iman</button>
-            <button type="button" class="btn btn-secondary" onclick="printHuda()">Al-Huda</button>
-            <button type="button" class="btn btn-secondary" onclick="printKhair()">Al-Khair</button>
-            <button type="button" class="btn btn-secondary" onclick="printMukminin()">Al-Mukminin</button>
-            <button type="button" class="btn btn-secondary" onclick="printRaudhah()">Ar-Raudhah</button>
-            <button type="button" class="btn btn-secondary" onclick="printAssyakirin()">Assyakirin</button>
-            <button type="button" class="btn btn-secondary" onclick="printDarussalam()">Darussalam</button>
-            <button type="button" class="btn btn-secondary" onclick="printJebat()">Hang Jebat</button>
-            <button type="button" class="btn btn-secondary" onclick="printHasanah()">Hasanah</button>
-            <button type="button" class="btn btn-secondary" onclick="printHussain()">Hussain Sulaiman</button>
-            <button type="button" class="btn btn-secondary" onclick="printMaarof()">Maarof</button>
-            <button type="button" class="btn btn-secondary" onclick="printBukom()">Pulau Bukom</button>
-            <button type="button" class="btn btn-secondary" onclick="printPusara()">Pusara Aman</button>
-            <button type="button" class="btn btn-secondary" onclick="printTentera()">Tentera Di Raja</button>
-        </div>
+    <div id="mosques" class="container text-center">
+        <div class="row">
+            <div class="list-group col">
+                <a href="#" class="list-group-item list-group-item-action active">
+                    North Sector
+                </a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printHamid()">Abdul Hamid Kg Pasiran</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printIbrahim()">Ahmad Ibrahim</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printIstiqamah()">Al-Istiqamah</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printAlkaff()">Alkaff Upp Serangoon</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printMuttaqin()">Al-Muttaqin</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printNahdhah()">An-Nahdhah</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printNur()">An-Nur</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printAssyafaah()">Assyafaah</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printMakmur()">Darul Makmur</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printYusoff()">Haji Yusoff</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printRahimabi()">Hajjah Rahimabi</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printMuhajirin()">Muhajirin</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printSalmah()">Omar Salmah</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printSembawang()">Petempatan Melayu
+                    Sembawang</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printIshak()">Masjid Yusof Ishak</a>
 
-        <script src="izzah.js">
-        </script>
+            </div>
+            <div class="list-group col">
+                <a href="#" class="list-group-item list-group-item-action active">
+                    South Sector
+                </a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printGafoor()">Abdul Gafoor</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printAbrar()">Al-Abrar</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printFalah()">Al-Falah</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action"  onclick="printAnggulia()">Anggulia</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printBaalwie()">Ba'Alwie</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printBencoolen()">Bencoolen</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printaBurhani()">Burhani</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printSalleh()">Haji Muhd Salleh (Palmer Road)</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printFatimah()">Hajjah Fatimah</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printJamae()">Jamae Chulia</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printQueenstown()">Jamek Queenstown</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printJamiyah()">Jamiyah Ar- Rabitah</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printDelta()">Kampong Delta</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printMalabar()">Malabar</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printMoulana()">Moulana Mohd Ali</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printMujahidin()">Mujahidin</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printMelaka()">Omar Kampung Melaka</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printSultan()">Sultan</a>
+                <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printTasek()">Tasek Utara</a>
+            </div>
+            <div class="list-group col">
+                    <a href="#" class="list-group-item list-group-item-action active">
+                        East Sector
+                    </a>
+                    <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printAleem()">Abdul Aleem Siddique</a>
+                    <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printRazak()">Al-Abdul Razak</a>
+                    <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printAnsar()">Al-Ansar</a>
+                    <a href="#mosque-hop" class="list-group-item list-group-item-action"  onclick="printIslah()">Masjid Al-Islah</a>
+                    <a href="#mosque-hop" class="list-group-item list-group-item-action"onclick="printIstighfar()">Al-Istighfar</a>
+                    <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printMawaddah()">Al-Mawaddah</a>
+                    <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printMelayu()">Alkaff Kampung Melayu</a>
+                    <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printTaqua()">Al-Taqua</a>
+                    <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printAman()">Darul Aman</a>
+                    <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printGhufran()">Darul Ghufran</a>
+                    <a href="#mosque-hop" class="list-group-item list-group-item-action"onclick="printMohd()">Haji Mohd Salleh</a>
+                    <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printSiglap()">Kampung Siglap</a>
+                    <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printKassim()">Kassim</a>
+                    <a href="#mosque-hop" class="list-group-item list-group-item-action"  onclick="printKhadijah()">Khadijah</a>
+                    <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printKhalid()">Khalid</a>
+                    <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printMydin()">Mydin</a>
+                    <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printMattar()">Salim Mattar</a>
+                    <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printWktg()">Wak Tanjong</a>
+                </div>
+                <div class="list-group col">
+                        <a href="#" class="list-group-item list-group-item-action active">
+                            West Sector
+                        </a>
+                        <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printAhmad()">Ahmad</a>
+                        <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printFirdaus()">Al-Firdaus</a>
+                        <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printIman()">Al-Iman</a>
+                        <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printHuda()">Al-Huda</a>
+                        <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printKhair()">Al-Khair </a>
+                        <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printMukminin()">Al-Mukminin</a>
+                        <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printRaudhah()">Ar-Raudhah</a>
+                        <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printAssyakirin()">Assyakirin</a>
+                        <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printDarussalam()">Darussalam</a>
+                        <a href="#mosque-hop" class="list-group-item list-group-item-action"  onclick="printJebat()">Hang Jebat</a>
+                        <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printHasanah()">Hasanah</a>
+                        <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printHussain()">Hussain Sulaiman</a>
+                        <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printMaarof()">Maarof</a>
+                        <a href="#mosque-hop" class="list-group-item list-group-item-action"  onclick="printBukom()">Pulau Bukom</a>
+                        <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printPusara()">Pusara Aman</a>
+                        <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printTentera()">Tentera Di Raja</a>
+                </div>
+            </div>
+
+            <script src="izzah.js">
+            </script>
 </body>
 
 </html>

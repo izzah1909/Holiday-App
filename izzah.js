@@ -323,3 +323,6 @@ function printTentera() {
     let tentera = "81 Clementi Rd, Singapore 129797";
     document.getElementById("card5").innerHTML = tentera;
 }
+
+
+
