@@ -8,6 +8,7 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Oleo+Script|Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animate.min.css">
     <style>
         html {
             scroll-behavior: smooth;
@@ -75,13 +76,14 @@
                     <li><a href="#khatam-calculator">Khatam Calculator</a></li>
                     <li><a href="#prayers">Prayers</a></li>
                     <li><a href="#mosque-hop">Mosque-hop</a></li>
+                    <li><a href="#hadeeth">Hadeeth Generator</a></li>
                 </ul>
             </div>
         </nav>
     </div>
     <div id="Home">
         <div id="intro" class="container text-center">
-            <h1 id="title">Ramadan 101</h1>
+            <h1 id="title" class="animated swing">Ramadan 101</h1>
             <h5 id="p"><em>This month of Ramadan, work your way to attain His blessings.</em></h5>
             <h5 id="p"><em>Our tools:</em></h5>
             <div id="buttons">
@@ -89,6 +91,7 @@
                     Calculator</a>
                 <a class="waves-effect waves-light btn-large purple lighten-4" href="#prayers">Prayers</a>
                 <a class="waves-effect waves-light btn-large purple lighten-4" href="#mosque-hop">Mosque-hop</a>
+                <a class="waves-effect waves-light btn-large purple lighten-4" href="#hadeeth">Hadeeth Generator</a>
             </div>
 
         </div>
@@ -257,6 +260,22 @@
                         <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printTentera()">Tentera Di Raja</a>
                 </div>
             </div>
+        <div  id="hadeeth"> 
+            <div id="intro" class="container text-center">
+                <h1 id="title">Random Hadeeth</h1>
+            </div>
+            <div class="d-flex justify-content-center mt-5 pt-5">
+                <blockquote class="blockquote">
+                <p id='message' class="mb-0">Click on the button below to read a random saying from the Prophet Muhammad (Peace be upon Him) surrounding Ramadan!</p>
+                <footer class="blockquote-footer" id='author'>The person who made this app</footer>
+                </blockquote>
+            </div>
+        
+            <hr />
+            <div class="d-flex justify-content-center">
+                <a class="waves-effect waves-light btn-large purple lighten-4" onclick="getNextQuote()">Get Random Hadeeth</a>
+            </div>
+        </div>
 
             <script src="izzah.js">
             </script>

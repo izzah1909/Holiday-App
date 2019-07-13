@@ -324,5 +324,71 @@ function printTentera() {
     document.getElementById("card5").innerHTML = tentera;
 }
 
+let currentRandomNumber = 0;
 
+const quotes = [
+  {
+    author: 'Prophet Muhammad PBUH',
+    message: 'When Ramadan enters, the gates of Paradise are opened, the gates of Hellfire are closed and the devils are chained.',
+  },
+  {
+    author: 'Prophet Muhammad PBUH',
+    message: '(The performance of) `Umrah during Ramadan is equal (in reward) to performing Hajj with me.',
+  },
+  {
+    author: 'Prophet Muhammad PBUH',
+    message: 'There are two occasions of joy for a fasting person: one when he breaks his fast, and the other when he meets his Lord',
+  },
+  {
+    author: 'Prophet Muhammad PBUH',
+    message: 'Whosoever fasts in Ramadan and then follows it with fasting six days of Shawwal, it is as if he fasts forever.',
+  },
+  {
+    author: 'Prophet Muhammad PBUH',
+    message: 'The (bad) breath (of a fasting person) is better in the sight of Allah than the fragrance of musk.',
+  },
+];
+
+function getNextQuote(){
+  const quote = getRandomQuote();
+
+  setAuthor(quote.author);
+  setMessage(quote.message);
+}
+
+function setAuthor(author){
+  setInnerHTMLOfElementById('author', author)
+}
+
+function setMessage(message){
+  setInnerHTMLOfElementById('message', message);
+}
+
+function setInnerHTMLOfElementById(elementId, innerHtml){
+  document.getElementById(elementId).innerHTML = innerHtml;
+}
+
+function getRandomQuote(){
+  const randomNumber = getRandomNumber();
+
+  return quotes[randomNumber];
+}
+
+
+function getRandomNumber(){
+  const randomNumber = getRandomArbitrary(0, quotes.length);
+  if(randomNumber === currentRandomNumber){
+    return getRandomNumber();
+  }
+
+  currentRandomNumber = randomNumber;
+  return randomNumber;
+
+  /**
+   * Returns a random number between min (inclusive) and max (exclusive)
+   */
+  function getRandomArbitrary(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+}
 
