@@ -8,7 +8,9 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Oleo+Script|Questrial&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+</head>
     <style>
         html {
             scroll-behavior: smooth;
@@ -62,8 +64,27 @@
         #mosque {
             padding-bottom: 20px;
             padding-left: 20px;
-
         }
+        #myBtn {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed/sticky position */
+            bottom: 20px; /* Place the button at the bottom of the page */
+            right: 30px; /* Place the button 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: #d1c4e9; /* Set a background color */
+            color: white; /* Text color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+            font-size: 18px; /* Increase font size */
+        }
+
+        #myBtn:hover {
+        background-color: #555; /* Add a dark-grey background on hover */
+        }
+                }
     </style>
 </head>
 
@@ -71,7 +92,7 @@
     <div class="navbar-fixed">
         <nav id="navbar">
             <div class="nav-wrapper deep-purple lighten-4">
-                <a class="brand-logo" id="logo">Ramadan 101</a>
+                <a class="brand-logo animated tada" id="logo">Ramadan 101</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="#khatam-calculator">Khatam Calculator</a></li>
                     <li><a href="#prayers">Prayers</a></li>
@@ -83,7 +104,7 @@
     </div>
     <div id="Home">
         <div id="intro" class="container text-center">
-            <h1 id="title" class="animated swing">Ramadan 101</h1>
+            <h1 id="title" class="animated jello">Ramadan 101</h1>
             <h5 id="p"><em>This month of Ramadan, work your way to attain His blessings.</em></h5>
             <h5 id="p"><em>Our tools:</em></h5>
             <div id="buttons">
@@ -260,25 +281,51 @@
                         <a href="#mosque-hop" class="list-group-item list-group-item-action" onclick="printTentera()">Tentera Di Raja</a>
                 </div>
             </div>
-        <div  id="hadeeth"> 
-            <div id="intro" class="container text-center">
-                <h1 id="title">Random Hadeeth</h1>
-            </div>
-            <div class="d-flex justify-content-center mt-5 pt-5">
-                <blockquote class="blockquote">
-                <p id='message' class="mb-0">Click on the button below to read a random saying from the Prophet Muhammad (Peace be upon Him) surrounding Ramadan!</p>
-                <footer class="blockquote-footer" id='author'>The person who made this app</footer>
-                </blockquote>
-            </div>
-        
-            <hr />
-            <div class="d-flex justify-content-center">
-                <a class="waves-effect waves-light btn-large purple lighten-4" onclick="getNextQuote()">Get Random Hadeeth</a>
+    </div>
+    <div  id="hadeeth" class="container text-center"> 
+        <div id="intro" class="container text-center">
+            <h1 id="title">Random Hadeeth</h1>
+        </div>
+        <div class="d-flex justify-content-center mt-5 pt-5">
+            <blockquote class="blockquote">
+            <p id='message' class="mb-0">Click on the button below to read a random saying from the Prophet Muhammad (Peace be upon Him) surrounding Ramadan!</p>
+            <footer class="blockquote-footer" id='author'>The person who made this app</footer>
+            </blockquote>
+        </div>
+    
+        <hr />
+        <div class="d-flex justify-content-center">
+            <a class="waves-effect waves-light btn-large purple lighten-4" onclick="getNextQuote()">Get Random Hadeeth</a>
+        </div>
+    </div>
+    <footer class="page-footer deep-purple darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">About App</h5>
+                    <p class="grey-text text-lighten-4">This is a midterm coding project that was done throughout Ramadan and Syawal to test the creator's understanding of what she learnt throughout her coding lessons! </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">My Other Apps</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Basic Calculator</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Grade Calculator</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">SG Bill Calculator</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Zakat Calculator</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Quiz App</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-
-            <script src="izzah.js">
-            </script>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2019 Code Hero Project by Nurul 'Izzah
+                <a class="grey-text text-lighten-4 right" href="#!">My Github</a>
+            </div>
+        </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="izzah.js"></script>
 </body>
 
 </html>
