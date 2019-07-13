@@ -356,7 +356,7 @@ const quotes = [
   },
   {
     author: 'Prophet Muhammad PBUH',
-    message: 'Whosever fasts in Ramadan and then follows it with fasting six days of Shawwal, it is as if he fasts forever.',
+    message: 'Whoever fasts in Ramadan and then follows it with fasting six days of Shawwal, it is as if he fasts forever.',
   },
   {
     author: 'Prophet Muhammad PBUH',
